@@ -28,6 +28,9 @@ class Cell(FixedAgent):
     def determine_state(self):
         """Compute if the cell will be dead or alive at the next tick"""
 
+        # This code is the same as the first simulation the only thing that changes is skipping the first row. 
+        # Because now the origanl agents for the whole grid are genererated at random you do not need to skip.
+
         top_y = (self.y + 1) % self.model.height
         left_x = (self.x - 1) % self.model.width
         right_x = (self.x + 1) % self.model.width

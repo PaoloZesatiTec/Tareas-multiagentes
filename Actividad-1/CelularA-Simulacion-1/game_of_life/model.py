@@ -24,6 +24,9 @@ class ConwaysGameOfLife(Model):
 
         # Place a cell at each location, with some initialized to
         # ALIVE and some to DEAD.
+
+        # The only thing I changed here is for the initial states to only give alive states to the first row. Which is done by equalling cell.coordinate 
+        # to height - 1. Meaning it will only generate the first row.
         for cell in self.grid.all_cells:
             Cell(
                 self,
