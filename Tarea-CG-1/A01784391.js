@@ -1,3 +1,14 @@
+/*
+ * Main file for the Smiley Face. It generates all the geometry, buffers,
+ * shaders, and hierarchical transformations needed to draw a smiley face
+ * in WebGL2. The face rotates around a movable pivot point, and the eyes
+ * and mouth follow the face using parent–child matrix transformations.
+ *
+ * Paolo Zesati Negrete
+ * 2025-11-13
+ */
+
+
 'use strict';
 
 import * as twgl from 'twgl';

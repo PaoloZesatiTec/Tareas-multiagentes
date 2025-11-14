@@ -1,3 +1,10 @@
+/*
+ * Shapes for the Smiley Face
+ *
+ * Paolo Zesati Negrete
+ * 2025-11-13
+ */
+
 'use strict';
 
 
